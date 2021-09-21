@@ -17,7 +17,6 @@ const Homepage = () => {
     const { data, isFetching } = useGetCryptosQuery();
     const globalStats = data?.data?.stats;
 
-    console.log(data);
 
     if(isFetching) return 'Loading...';
 
