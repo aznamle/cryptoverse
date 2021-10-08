@@ -9,6 +9,7 @@ import {
     Cryptocurrencies, 
     News 
 } from '.';
+import Loader from './Loader';
 
 const { Title } = Typography;
 
@@ -18,7 +19,7 @@ const Homepage = () => {
     const globalStats = data?.data?.stats;
 
 
-    if(isFetching) return 'Loading...';
+    if(isFetching) return <Loader />;
 
     return (
         <>
